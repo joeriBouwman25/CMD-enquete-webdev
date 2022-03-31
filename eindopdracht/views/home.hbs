@@ -1,0 +1,375 @@
+<form action="#">
+  <fieldset>
+    <legend>Student gegevens</legend>
+    <h2>Jouw gegevens</h2>
+    <label for="name">Je naam:</label>
+    <input
+      type="text"
+      name="name"
+      id="name"
+      placeholder="Jouw naam"
+      pattern="^\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\w+( \w+)*$"
+      required=""
+      aria-required="”true”"
+      title="Voer hier je naam in."
+    />
+    <label for="studentnummer">studentnummer:</label>
+    <input
+      type="text"
+      name="studentnummer"
+      id="studentnummer"
+      placeholder="500123456"
+      pattern="[0-9]{9}"
+      title="Voer hier je studentnummer in."
+      required=""
+    />
+  </fieldset>
+
+  <fieldset>
+    <legend>Web Apps From Scratch</legend>
+
+    {{! Beoordelaar }}
+    <h2>Beoordelaar</h2>
+    <input type="radio" name="wafs-docent" value="0" id="wafs-joost" />
+    <label for="wafs-joost">Joost</label>
+    <input type="radio" name="wafs-docent" value="0" id="wafs-koop" />
+    <label for="wafs-koop">Koop</label>
+
+    {{! Weken }}
+    <h2>In welke weken volgde je dit vak?</h2>
+    <label for="weekStart">Van week: </label>
+    <input type="number" name="wafs-weken" id="weekStart" min="0" max="52" value="1" />
+    <label for="weekEnd">tot week: </label>
+    <input type="number" name="wafs-weken" id="weekEnd" min="0" max="52" value="3" />
+
+    {{! cijfer }}
+    <h2>Welk cijfer geef je dit vak?</h2>
+    <input type="radio" name="wafs-cijfer" value="0" id="wafs-cijfer-0" />
+    <label for="wafs-cijfer-0">0</label>
+    <input type="radio" name="wafs-cijfer" value="0" id="wafs-cijfer-1" />
+    <label for="wafs-cijfer-1">1</label>
+    <input type="radio" name="wafs-cijfer" value="0" id="wafs-cijfer-2" />
+    <label for="wafs-cijfer-2">2</label>
+    <input type="radio" name="wafs-cijfer" value="0" id="wafs-cijfer-3" />
+    <label for="wafs-cijfer-3">3</label>
+    <input type="radio" name="wafs-cijfer" value="0" id="wafs-cijfer-4" />
+    <label for="wafs-cijfer-4">4</label>
+    <input type="radio" name="wafs-cijfer" value="0" id="wafs-cijfer-5" />
+    <label for="wafs-cijfer-5">5</label>
+    <input type="radio" name="wafs-cijfer" value="0" id="wafs-cijfer-6" />
+    <label for="wafs-cijfer-6">6</label>
+    <input type="radio" name="wafs-cijfer" value="0" id="wafs-cijfer-7" />
+    <label for="wafs-cijfer-7">7</label>
+    <input type="radio" name="wafs-cijfer" value="0" id="wafs-cijfer-8" />
+    <label for="wafs-cijfer-8">8</label>
+    <input type="radio" name="wafs-cijfer" value="0" id="wafs-cijfer-9" />
+    <label for="wafs-cijfer-9">9</label>
+    <input type="radio" name="wafs-cijfer" value="0" id="wafs-cijfer-10" />
+    <label for="wafs-cijfer-10">10</label>
+
+    {{! Lesstof }}
+    <h2>Hoe goed was de lesstof te begrijpen?</h2>
+    <input type="radio" name="wafs-lesstof" value="makkelijk" id="wafs-lesstof-0" />
+    <label for="wafs-lesstof-0">Zeer Lastig</label>
+    <input type="radio" name="wafs-lesstof" value="makkelijk" id="wafs-lesstof-1" />
+    <label for="wafs-lesstof-1">Lastig</label>
+    <input type="radio" name="wafs-lesstof" value="makkelijk" id="wafs-lesstof-2" />
+    <label for="wafs-lesstof-2">studenten 10</label>
+    <input type="radio" name="wafs-lesstof" value="makkelijk" id="wafs-lesstof-3" />
+    <label for="wafs-lesstof-3">Goed</label>
+    <input type="radio" name="wafs-lesstof" value="makkelijk" id="wafs-lesstof-4" />
+    <label for="wafs-lesstof-4">Zeer Goed</label>
+
+    {{! Uitleg }}
+    <h2>Hoe goed was de uitleg te begrijpen?</h2>
+    <input type="radio" name="wafs-uitleg" value="makkelijk" id="wafs-uitleg-0" />
+    <label for="wafs-uitleg-0">Zeer Lastig</label>
+    <input type="radio" name="wafs-uitleg" value="makkelijk" id="wafs-uitleg-1" />
+    <label for="wafs-uitleg-1">Lastig</label>
+    <input type="radio" name="wafs-uitleg" value="makkelijk" id="wafs-uitleg-2" />
+    <label for="wafs-uitleg-2">studenten 10</label>
+    <input type="radio" name="wafs-uitleg" value="makkelijk" id="wafs-uitleg-3" />
+    <label for="wafs-uitleg-3">Goed</label>
+    <input type="radio" name="wafs-uitleg" value="makkelijk" id="wafs-uitleg-4" />
+    <label for="wafs-uitleg-4">Zeer Goed</label>
+
+    <h2>Opmerkingen:</h2>
+    <textarea
+      name="reden"
+      id="wafs-opmerkingen"
+      cols="50"
+      rows="7"
+      placeholder="Opmerking:"
+    ></textarea>
+  </fieldset>
+
+  <fieldset>
+    <legend>CSS To The Rescue</legend>
+
+    {{! Beoordelaar }}
+    <h2>Beoordelaar</h2>
+    <input type="radio" name="css-docent" value="0" id="css-sanne" />
+    <label for="css-sanne">Sanne</label>
+    <input type="radio" name="css-docent" value="0" id="css-vasilis" />
+    <label for="css-vasilis">Vasilis</label>
+
+    {{! Weken }}
+    <h2>In welke weken volgde je dit vak?</h2>
+    <label for="weekStart">Van week: </label>
+    <input type="number" name="css-weken" id="weekStart" min="0" max="52" value="1" />
+    <label for="weekEnd">tot week: </label>
+    <input type="number" name="css-weken" id="weekEnd" min="0" max="52" value="3" />
+
+    {{! cijfer }}
+    <h2>Welk cijfer geef je dit vak?</h2>
+    <input type="radio" name="css-cijfer" value="0" id="css-cijfer-0" />
+    <label for="css-cijfer-0">0</label>
+    <input type="radio" name="css-cijfer" value="0" id="css-cijfer-1" />
+    <label for="css-cijfer-1">1</label>
+    <input type="radio" name="css-cijfer" value="0" id="css-cijfer-2" />
+    <label for="css-cijfer-2">2</label>
+    <input type="radio" name="css-cijfer" value="0" id="css-cijfer-3" />
+    <label for="css-cijfer-3">3</label>
+    <input type="radio" name="css-cijfer" value="0" id="css-cijfer-4" />
+    <label for="css-cijfer-4">4</label>
+    <input type="radio" name="css-cijfer" value="0" id="css-cijfer-5" />
+    <label for="css-cijfer-5">5</label>
+    <input type="radio" name="css-cijfer" value="0" id="css-cijfer-6" />
+    <label for="css-cijfer-6">6</label>
+    <input type="radio" name="css-cijfer" value="0" id="css-cijfer-7" />
+    <label for="css-cijfer-7">7</label>
+    <input type="radio" name="css-cijfer" value="0" id="css-cijfer-8" />
+    <label for="css-cijfer-8">8</label>
+    <input type="radio" name="css-cijfer" value="0" id="css-cijfer-9" />
+    <label for="css-cijfer-9">9</label>
+    <input type="radio" name="css-cijfer" value="0" id="css-cijfer-10" />
+    <label for="css-cijfer-10">10</label>
+
+    {{! Lesstof }}
+    <h2>Hoe goed was de lesstof te begrijpen?</h2>
+    <input type="radio" name="css-lesstof" value="makkelijk" id="css-lesstof-0" />
+    <label for="css-lesstof-0">Zeer Lastig</label>
+    <input type="radio" name="css-lesstof" value="makkelijk" id="css-lesstof-1" />
+    <label for="css-lesstof-1">Lastig</label>
+    <input type="radio" name="css-lesstof" value="makkelijk" id="css-lesstof-2" />
+    <label for="css-lesstof-2">studenten 10</label>
+    <input type="radio" name="css-lesstof" value="makkelijk" id="css-lesstof-3" />
+    <label for="css-lesstof-3">Goed</label>
+    <input type="radio" name="css-lesstof" value="makkelijk" id="css-lesstof-4" />
+    <label for="css-lesstof-4">Zeer Goed</label>
+
+    {{! Uitleg }}
+    <h2>Hoe goed was de uitleg te begrijpen?</h2>
+    <input type="radio" name="css-uitleg" value="makkelijk" id="css-uitleg-0" />
+    <label for="css-uitleg-0">Zeer Lastig</label>
+    <input type="radio" name="css-uitleg" value="makkelijk" id="css-uitleg-1" />
+    <label for="css-uitleg-1">Lastig</label>
+    <input type="radio" name="css-uitleg" value="makkelijk" id="css-uitleg-2" />
+    <label for="css-uitleg-2">studenten 10</label>
+    <input type="radio" name="css-uitleg" value="makkelijk" id="css-uitleg-3" />
+    <label for="css-uitleg-3">Goed</label>
+    <input type="radio" name="css-uitleg" value="makkelijk" id="css-uitleg-4" />
+    <label for="css-uitleg-4">Zeer Goed</label>
+
+    <h2>Opmerkingen:</h2>
+    <textarea
+      name="reden"
+      id="css-opmerkingen"
+      cols="50"
+      rows="7"
+      placeholder="Opmerking:"
+    ></textarea>
+  </fieldset>
+
+  <fieldset>
+    <legend>Browser Technologies</legend>
+
+    {{! Beoordelaar }}
+    <h2>Beoordelaar</h2>
+    <input type="radio" name="wafs-docent" value="0" id="wafs-peter" />
+    <label for="wafs-peter">Peter</label>
+    <input type="radio" name="wafs-docent" value="0" id="wafs-robert" />
+    <label for="wafs-robert">Robert</label>
+
+    {{! Weken }}
+    <h2>In welke weken volgde je dit vak?</h2>
+    <label for="weekStart">Van week: </label>
+    <input type="number" name="bt-weken" id="weekStart" min="0" max="52" value="1" />
+    <label for="weekEnd">tot week: </label>
+    <input type="number" name="bt-weken" id="weekEnd" min="0" max="52" value="3" />
+
+    {{! cijfer }}
+    <h2>Welk cijfer geef je dit vak?</h2>
+    <input type="radio" name="bt-cijfer" value="0" id="bt-cijfer-0" />
+    <label for="bt-cijfer-0">0</label>
+    <input type="radio" name="bt-cijfer" value="0" id="bt-cijfer-1" />
+    <label for="bt-cijfer-1">1</label>
+    <input type="radio" name="bt-cijfer" value="0" id="bt-cijfer-2" />
+    <label for="bt-cijfer-2">2</label>
+    <input type="radio" name="bt-cijfer" value="0" id="bt-cijfer-3" />
+    <label for="bt-cijfer-3">3</label>
+    <input type="radio" name="bt-cijfer" value="0" id="bt-cijfer-4" />
+    <label for="bt-cijfer-4">4</label>
+    <input type="radio" name="bt-cijfer" value="0" id="bt-cijfer-5" />
+    <label for="bt-cijfer-5">5</label>
+    <input type="radio" name="bt-cijfer" value="0" id="bt-cijfer-6" />
+    <label for="bt-cijfer-6">6</label>
+    <input type="radio" name="bt-cijfer" value="0" id="bt-cijfer-7" />
+    <label for="bt-cijfer-7">7</label>
+    <input type="radio" name="bt-cijfer" value="0" id="bt-cijfer-8" />
+    <label for="bt-cijfer-8">8</label>
+    <input type="radio" name="bt-cijfer" value="0" id="bt-cijfer-9" />
+    <label for="bt-cijfer-9">9</label>
+    <input type="radio" name="bt-cijfer" value="0" id="bt-cijfer-10" />
+    <label for="bt-cijfer-10">10</label>
+
+    {{! Lesstof }}
+    <h2>Hoe goed was de lesstof te begrijpen?</h2>
+    <input type="radio" name="bt-lesstof" value="makkelijk" id="bt-lesstof-0" />
+    <label for="bt-lesstof-0">Zeer Lastig</label>
+    <input type="radio" name="bt-lesstof" value="makkelijk" id="bt-lesstof-1" />
+    <label for="bt-lesstof-1">Lastig</label>
+    <input type="radio" name="bt-lesstof" value="makkelijk" id="bt-lesstof-2" />
+    <label for="bt-lesstof-2">studenten 10</label>
+    <input type="radio" name="bt-lesstof" value="makkelijk" id="bt-lesstof-3" />
+    <label for="bt-lesstof-3">Goed</label>
+    <input type="radio" name="bt-lesstof" value="makkelijk" id="bt-lesstof-4" />
+    <label for="bt-lesstof-4">Zeer Goed</label>
+
+    {{! Uitleg }}
+    <h2>Hoe goed was de uitleg te begrijpen?</h2>
+    <input type="radio" name="bt-uitleg" value="makkelijk" id="bt-uitleg-0" />
+    <label for="bt-uitleg-0">Zeer Lastig</label>
+    <input type="radio" name="bt-uitleg" value="makkelijk" id="bt-uitleg-1" />
+    <label for="bt-uitleg-1">Lastig</label>
+    <input type="radio" name="bt-uitleg" value="makkelijk" id="bt-uitleg-2" />
+    <label for="bt-uitleg-2">studenten 10</label>
+    <input type="radio" name="bt-uitleg" value="makkelijk" id="bt-uitleg-3" />
+    <label for="bt-uitleg-3">Goed</label>
+    <input type="radio" name="bt-uitleg" value="makkelijk" id="bt-uitleg-4" />
+    <label for="bt-uitleg-4">Zeer Goed</label>
+
+    <h2>Opmerkingen:</h2>
+    <textarea
+      name="reden"
+      id="bt-opmerkingen"
+      cols="50"
+      rows="7"
+      placeholder="Opmerking:"
+    ></textarea>
+  </fieldset>
+
+  <fieldset>
+    <legend>Progresive Web Apps</legend>
+
+    {{! Beoordelaar }}
+    <h2>Beoordelaar</h2>
+    <input type="radio" name="pwa-docent" value="0" id="pwa-declan" />
+    <label for="pwa-declan">Declan</label>
+    <input type="radio" name="pwa-docent" value="0" id="pwa-justus" />
+    <label for="pwa-justus">Justus</label>
+
+    {{! Weken }}
+    <h2>In welke weken volgde je dit vak?</h2>
+    <label for="weekStart">Van week: </label>
+    <input type="number" name="pwa-weken" id="weekStart" min="0" max="52" value="1" />
+    <label for="weekEnd">tot week: </label>
+    <input type="number" name="pwa-weken" id="weekEnd" min="0" max="52" value="3" />
+
+    {{! cijfer }}
+    <h2>Welk cijfer geef je dit vak?</h2>
+    <input type="radio" name="pwa-cijfer" value="0" id="pwa-cijfer-0" />
+    <label for="pwa-cijfer-0">0</label>
+    <input type="radio" name="pwa-cijfer" value="0" id="pwa-cijfer-1" />
+    <label for="pwa-cijfer-1">1</label>
+    <input type="radio" name="pwa-cijfer" value="0" id="pwa-cijfer-2" />
+    <label for="pwa-cijfer-2">2</label>
+    <input type="radio" name="pwa-cijfer" value="0" id="pwa-cijfer-3" />
+    <label for="pwa-cijfer-3">3</label>
+    <input type="radio" name="pwa-cijfer" value="0" id="pwa-cijfer-4" />
+    <label for="pwa-cijfer-4">4</label>
+    <input type="radio" name="pwa-cijfer" value="0" id="pwa-cijfer-5" />
+    <label for="pwa-cijfer-5">5</label>
+    <input type="radio" name="pwa-cijfer" value="0" id="pwa-cijfer-6" />
+    <label for="pwa-cijfer-6">6</label>
+    <input type="radio" name="pwa-cijfer" value="0" id="pwa-cijfer-7" />
+    <label for="pwa-cijfer-7">7</label>
+    <input type="radio" name="pwa-cijfer" value="0" id="pwa-cijfer-8" />
+    <label for="pwa-cijfer-8">8</label>
+    <input type="radio" name="pwa-cijfer" value="0" id="pwa-cijfer-9" />
+    <label for="pwa-cijfer-9">9</label>
+    <input type="radio" name="pwa-cijfer" value="0" id="pwa-cijfer-10" />
+    <label for="pwa-cijfer-10">10</label>
+
+    {{! Lesstof }}
+    <h2>Hoe goed was de lesstof te begrijpen?</h2>
+    <input type="radio" name="pwa-lesstof" value="makkelijk" id="pwa-lesstof-0" />
+    <label for="pwa-lesstof-0">Zeer Lastig</label>
+    <input type="radio" name="pwa-lesstof" value="makkelijk" id="pwa-lesstof-1" />
+    <label for="pwa-lesstof-1">Lastig</label>
+    <input type="radio" name="pwa-lesstof" value="makkelijk" id="pwa-lesstof-2" />
+    <label for="pwa-lesstof-2">studenten 10</label>
+    <input type="radio" name="pwa-lesstof" value="makkelijk" id="pwa-lesstof-3" />
+    <label for="pwa-lesstof-3">Goed</label>
+    <input type="radio" name="pwa-lesstof" value="makkelijk" id="pwa-lesstof-4" />
+    <label for="pwa-lesstof-4">Zeer Goed</label>
+
+    {{! Uitleg }}
+    <h2>Hoe goed was de uitleg te begrijpen?</h2>
+    <input type="radio" name="pwa-uitleg" value="makkelijk" id="pwa-uitleg-0" />
+    <label for="pwa-uitleg-0">Zeer Lastig</label>
+    <input type="radio" name="pwa-uitleg" value="makkelijk" id="pwa-uitleg-1" />
+    <label for="pwa-uitleg-1">Lastig</label>
+    <input type="radio" name="pwa-uitleg" value="makkelijk" id="pwa-uitleg-2" />
+    <label for="pwa-uitleg-2">studenten 10</label>
+    <input type="radio" name="pwa-uitleg" value="makkelijk" id="pwa-uitleg-3" />
+    <label for="pwa-uitleg-3">Goed</label>
+    <input type="radio" name="pwa-uitleg" value="makkelijk" id="pwa-uitleg-4" />
+    <label for="pwa-uitleg-4">Zeer Goed</label>
+
+    <h2>Opmerkingen:</h2>
+    <textarea
+      name="reden"
+      id="pwa-opmerkingen"
+      cols="50"
+      rows="7"
+      placeholder="Opmerking:"
+    ></textarea>
+  </fieldset>
+
+  <button>Verstuur</button>
+</form>
+
+{{! <fieldset>
+      <legend>Algemeen</legend>
+      <h2>Welk cijfer geef je deze minor?</h2>
+      <input type="radio" name="beoordeling" value="0" id="beoordeling-0" />
+      <label for="beoordeling-0">0</label>
+      <input type="radio" name="beoordeling" value="0" id="beoordeling-1" />
+      <label for="beoordeling-1">1</label>
+      <input type="radio" name="beoordeling" value="0" id="beoordeling-2" />
+      <label for="beoordeling-2">2</label>
+      <input type="radio" name="beoordeling" value="0" id="beoordeling-3" />
+      <label for="beoordeling-3">3</label>
+      <input type="radio" name="beoordeling" value="0" id="beoordeling-4" />
+      <label for="beoordeling-4">4</label>
+      <input type="radio" name="beoordeling" value="0" id="beoordeling-5" />
+      <label for="beoordeling-5">5</label>
+      <input type="radio" name="beoordeling" value="0" id="beoordeling-6" />
+      <label for="beoordeling-6">6</label>
+      <input type="radio" name="beoordeling" value="0" id="beoordeling-7" />
+      <label for="beoordeling-7">7</label>
+      <input type="radio" name="beoordeling" value="0" id="beoordeling-8" />
+      <label for="beoordeling-8">8</label>
+      <input type="radio" name="beoordeling" value="0" id="beoordeling-9" />
+      <label for="beoordeling-9">9</label>
+      <input type="radio" name="beoordeling" value="0" id="beoordeling-10" />
+      <label for="beoordeling-10">10</label>
+      <h2>Waarom geef je de minor dit cijfer?</h2>
+      <textarea
+        name="reden"
+        id="reden"
+        cols="50"
+        rows="7"
+        placeholder="Jouw reden:"
+      ></textarea> }}

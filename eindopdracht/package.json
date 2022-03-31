@@ -1,0 +1,30 @@
+{
+  "name": "tech",
+  "version": "1.0.0",
+  "description": "package for the backend of a matching application",
+  "main": "server.js",
+  "scripts": {
+    "test": "nodemon server.js",
+    "start": "node server.js",
+    "lint": "eslint .",
+    "lint:fix": "eslint . --fix",
+    "postcss": "npx postcss public/css/style.css > public/css/style_output.css",
+    "css-size-help": "css-size --help",
+    "csssize": "css-size public/css/style.css"
+  },
+  "author": "Joeri Bouwman",
+  "license": "MIT",
+  "dependencies": {
+    "dotenv": "^8.2.0",
+    "express": "^4.17.1",
+    "express-handlebars": "^5.3.0"
+  },
+  "devDependencies": {
+    "eslint": "^7.26.0",
+    "eslint-config-standard": "^16.0.2",
+    "eslint-plugin-import": "^2.23.1",
+    "eslint-plugin-node": "^11.1.0",
+    "eslint-plugin-promise": "^4.3.1",
+    "nodemon": "^2.0.7"
+  }
+}
