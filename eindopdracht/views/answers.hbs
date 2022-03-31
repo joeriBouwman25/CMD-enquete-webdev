@@ -1,3 +1,5 @@
+<h2>Je hebt de volgende antwoorden gegeven:</h2>
+
 <form action="/" method="post">
   <fieldset>
     <legend>Student gegevens</legend>
@@ -7,18 +9,18 @@
       type="text"
       name="name"
       id="name"
-      placeholder="Jouw naam"
+      placeholder="{{name}}"
       required=""
       aria-required="”true”"
       title="Voer hier je naam in."
       {{! pattern="^w+( \w+)*$" }}
     />
-    <label for="studentNumber">studentnummer:</label>
+    <label for="studentnummer">studentnummer:</label>
     <input
-      type="number"
+      type="text"
       name="studentNumber"
       id="studentNumber"
-      placeholder="500123456"
+      placeholder="{{studentNumber}}"
       pattern="[0-9]{9}"
       title="Voer hier je studentnummer in."
       required=""
@@ -95,7 +97,7 @@
 
     <h2>Opmerkingen:</h2>
     <textarea
-      name="wafs-opmerkingen"
+      name="reden"
       id="wafs-opmerkingen"
       cols="50"
       rows="7"
@@ -173,7 +175,7 @@
 
     <h2>Opmerkingen:</h2>
     <textarea
-      name="css-opmerkingen"
+      name="reden"
       id="css-opmerkingen"
       cols="50"
       rows="7"
@@ -251,7 +253,7 @@
 
     <h2>Opmerkingen:</h2>
     <textarea
-      name="bt-opmerkingen"
+      name="reden"
       id="bt-opmerkingen"
       cols="50"
       rows="7"
@@ -329,7 +331,7 @@
 
     <h2>Opmerkingen:</h2>
     <textarea
-      name="pwa-opmerkingen"
+      name="reden"
       id="pwa-opmerkingen"
       cols="50"
       rows="7"
