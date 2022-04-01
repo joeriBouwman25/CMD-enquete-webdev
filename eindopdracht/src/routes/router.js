@@ -6,7 +6,8 @@ const router = express.Router()
 
 router
   .get('/', ui.getIndex)
-  .post('/', ui.submitted)
+  .post('/', ui.getSurvey)
+  .post('/survey', ui.submitted)
 
 
 
