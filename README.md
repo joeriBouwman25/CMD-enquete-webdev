@@ -1,130 +1,93 @@
-# Browser Technologies @cmda-minor-web 20-21
+# CMD-Enquête-WebDev
 
-_Robuuste, toegankelijke websites ontwerpen en maken …_
-
-Één van de mooiste [principes](https://www.w3.org/DesignIssues/Principles.html) van het web is dat iedereen met een computer en een browser het web kan gebruik. [Het web is voor iedereen](https://www.youtube.com/watch?v=UMNFehJIi0E). Het is geen gecontroleerde (programmeer) omgeving, je kan er gerust van uit gaan dat niemand precies hetzelfde te zien krijgt als wat jij in je browser ziet. Er zijn technische beperkingen, zoals afmetingen van de browser, grootte van het apparaat, manier van interactie, kwaliteit van de hardware, kwaliteit van het netwerk en er zijn mensen, allemaal verschillende mensen ...
-
-In het vak Browser Technologies gaan we onderzoeken wat Progressive Enhancement is en hoe je dit kan toepassen om goede, robuuste, toegankelijke websites te maken. Voor iedereen. Het web is voor iedereen, in dit vak leer je hoe je daarvoor kan zorgen.
-
-## Opdrachten
-
-het vak bestaat uit 3 opdrachten. In week 1 werken we aan opdracht 1 en 2. Vanaf week 2 werken we aan de eindopdracht.
-
-### Opdracht 1 🛹 NPM install Progressive- enhancement
-
-Voor de eerste opdracht gaan we onderzoeken wat Progressive Enhancement is.
-
-- [Opdracht 1 - NPM install Progressive Enhancement](course/opdracht-1.md)
-
-### Opdracht 2 💔 Breek het Web
-
-Voor opdracht 2 ga je proberen het Web te laten 'breken' door (browser) features bewust uit te zetten. Wat gebeurt er als images, custom fonts, JavaScript, kleur, breedband internet niet optimaal werken?
-
-- [Opdracht 2 - Breek het Web](course/opdracht-2.md)
-
-### Eindopdracht ✨ Progressive Enhanced Browser Technologie
-
-Voor de eindopdracht ontwerp en maak je een interactieve toepassing volgens het principe van Progressive Enhancement. Zorg dat alle gebruikers, met alle browsers, in iedere context de toepassing zo goed mogelijk te zien, horen en/of voelen krijgen. De meest 'enhanced' versie is 'delightful UX', mooi en prettig om te gebruiken.
-
-- [De eindopdracht - Progressive Enhanced Browser Technologie](course/eindopdracht.md)
+![](./docs/header.png)
 
 
-### Leerdoelen
-- _je leert wat Progressive enhancement is en hoe je dit kan toepassen._
-- _je leert Browser Technologies te onderzoeken, testen en implementeren als enhancement._
-- _je leert hoe je Feature Detection doet en wat je kan doen als een 'feature' niet werkt of wordt ondersteund._
+## Over CMD-Enquête-WebDev
+CMD-Enquête-WebDev is een serverside gerenderde website waarbij de gebruiker een enquête over de eerste vier vakken uit de CMD minor Web Development kan invullen. Nadat de gebruiker de enquête heeft ingevuld is het mogelijk voor de gebruiker om zijn of haar antwoorden in te zien
 
-[Rubric](https://icthva.sharepoint.com/:x:/s/FDMCI_EDU_CMD_Minor_Web_Design__Development/ET8k_fDG3VVPvqMkqx2uCusBR5-yeGaKo01meb9bDorLuQ?e=0hbmOk)
+## Table of contents
 
-## Planning & programma
+-   User Story
+-   Features
+-   Live demo
+-   Todo's
+-   Wireflow
+-   Browsers getest
+-   Testverslag
+-   Progressive enhancement
+-   License
 
-| Planning  | Woensdag  |  Donderdag | Vrijdag  |
-|---|---|---|---|
-| [Week 1](#week-1)  | Intro, College + briefing opdracht 1 | Presentaties opdracht 1, college +  briefing opdracht 2 | Presentaties opdracht 2 |
-| [Week 2](#week-2)  | College + Briefing De eindopdracht  | College + werken aan de opdracht | Feedbackgesprekken  |
-| [Week 3](#week-3)  | College + werken aan de opdracht  |  College + werken aan de opdracht | Beoordelingen!  |
+## User Story
+Ik wil een enquête kunnen invullen over de minor Web Development, met verschillende antwoordmogelijkheden. Na afloop wil ik mijn antwoorden kunnen inzien.
 
-### Week 1
+## Features
+-   Enquête invullen
+-   antwoorden visueel inzien
+-   Mobiele & desktop versie
 
-Het web is voor iedereen: Deze week gaan we onderzoeken wat Progressive Enhancement is en kennismaken met testen en het device lab.
+## Wireflow
+ 
+ <p float="left">
+<img src="./docs/wireflow.jpeg" width="48%" />
+<img src="./docs/wireflow2.jpeg" width="48%" />
+</p>
 
-#### Woensdag 23 maart
+## Browsers
 
-Browser Technolgies begint op woensdag. In het eerste college krijg je uitleg over het programma en over het nut van Progressive Enancement. Wat is dat eigenlijk? De meeste CMD studenten hebben dit waarschijnlijk al eens gehoord en misschien iets mee gedaan in blok Tech. Progressive Enhancement, oftewel PE, is een manier hoe je je de code van een website kan bouwen zodat alle gebruikers met alle browsers je website zo goed mogelijk te zien krijgen. Met PE kun je robuuste websites bouwen die het altijd doen. PE is een manier van denken.
-
-| Woensdag 23/3 | Wat  |
-|---|---|
-| 9:30 | College les 1 over het vak, wie, wat, waar en waarom |
-|  | [Briefing Opdracht 1 🛹 NPM install Progressive-Enhancement](course/opdracht-.md) |
-| 16:00 | Checkout in groepjes |
-
-##### Lezen voor les 1 📖
-
-- [Everyone has JavaScript, right? by Stuart Langridge](https://kryogenix.org/code/browser/everyonehasjs.html)
+De enquête is in de volgende browsers getest:
+-   Brave/Chrome MacOS
+-   Microsoft Edge
+-   Safari MacOS
+-   Firefox MacOS
 
 
-#### Donderdag 24 maart
+## Live demo
 
-Donderdag gaan we opdracht 1 bekijken en bespreken. Als het goed is heb je een beeld gevormd van Progressive Enhancement. Tijdens de bespreking kun je ook vragen te stellen, samen onderzoeken we wat PE is, waarom het goed is om te begrijpen en misschien kunnen we al wat voorbeelden bespreken hoe je het zou kunnen toepassen.
+Probeer de applicatie zelf uit op: https://node-poll-bt.herokuapp.com/
 
-In het college krijg je uitleg over opdracht 2. Voor deze opdracht ga je proberen het web te laten 'breken' door (browser) features bewust uit te zetten. Wat gebeurt er als images, custom fonts, JavaScript, kleur, breedband internet niet optimaal werken?
+## ✅ Todo's
 
-🤟 Vandaag geeft [Aaron Gustafson](https://www.aaron-gustafson.com) om 17:00 een gast-college. hij schreef in 2008 het artikel [Understanding Progressive Enhancement](https://alistapart.com/article/understandingprogressiveenhancement/) waarna deze manier van denken een belangrijk onderdeel werd van Web Development. Aaron Gustafson werkt bij Microsoft als 'web standard advocate' met het Edge browser team.
+-   Tussentijds opslaan van informatie 
+-   Betere from validation
 
-| Donderdag 24/3 | Wat  |
-|---|---|
-| 9:30 | Opdracht 1 bespreken in Squads 🛹 |
-| 10:30 | College les 2 over Browser features |
-|  | [Briefing Opdracht 2 💔 Breek het web](course/opdracht-2.md) |
-| 16:00 | Checkout per team |
-| 17:00 | Gastcollege Aaron Gustafson 🤟 |
+## Testverslag
 
-Lezen voor les 2 📖
+Allereerst ben ik aan de slag gegaan op mijn macbook met chrome macOS als browser, ik zorgde er voor dat ik alleen  html schreef in eerste instantie. hierbij lette ik er op dat de core functies bleven werken, namelijk het invullen van de enquête. Toen dit eenmaal werkte ben ik CSS gaan toevoegen, nadat ik dit had gedaan ben ik pas aan de slag gegaan met andere devices en browsers. 
 
-- [The unreasonable effectiveness of simple HTML by Terence Eden](https://shkspr.mobi/blog/2021/01/the-unreasonable-effectiveness-of-simple-html/)
+### CSS
 
-#### Vrijdag 25 maart
+Op oudere devices bleek dat mijn CSS niet overal even goed ondersteunt werd, zo gebruikte ik de css `:not()` selector, dit werd niet ondersteund op oudere browsers, dit heb ik opgelost door elementen op een andere manier aan te spreken, dit kostte meer regels css maar het werkt wel. Ook werd `@supports` niet ondersteunt op de windows surface, hierdoor dacht ik dat flex niet ondersteund werd waarna ik mijn pagina's ook zonder flex ben gaan positioneren. Later kwam ik er achter dat flex wel werd ondersteund en heb ik een andere property op mijn @support gezet om het toch te laten werken.
 
-Vrijdag bespreken we opdracht 2. Zorg dat je de bevindingen van je onderzoek online kan presenteren. We gaan de hele feature lijst doorlopen en alle studenten kunnen laten zien wat ze hebben onderzocht, met voorbeelden, de problemen, cijfers en/of meningen. Bedenk ook hoe je de problemen zou kunnen oplossen.
+Ook is het met microsoft Edge niet mogelijk om de css selector `:valid` te gebruiken op een fieldset. ik gebruikte dit om te kijken of alles was ingevuld in een fieldset waarna het volgende stuk van de enquête geladen werd. Om dit op te lossen moest ik gaan checken of elke input wel valid was. Omdat ik veel radio buttons gebruik was dit geen handige oplossing. Daarom heb ik alsnog `@supports` gebruikt om te kijken of `fieldset:valid` ondersteund word, zo niet dan is de hele enquête in een keer zichtbaar.
 
-| Vrijdag 25/3 | Wat  |
-|---|---|
-| 9:30 | [Opdracht 2 bespreken](course/BT2021-opdracht-2-8-features.pdf) |
-| 16:00 | Work Hard Play Hard |
+### JavaScript
 
-### Week 2
+Toen ik mijn workarounds voor mijn css had geschreven ging ik met clientside javascript aan de gang waarvan ik nog niks had geschreven. Toen ik ging testen werkte niks meer, dit kwam omdat ik alles in javascript es6 had geschreven. oude browsers kunnen `const` en `let` niet lezen, ook worden arrow functions niet ondersteund. Il had vrij snel door dat mijn javascript om deze reden niet werktte. Door mijn arrow function om te schrijven naar es5 functions en `const` en `let` om te zetten naar `var` werkte mijn script wel. 
+Daarna moest ik alleen nog mijn `forEach` functie omschrijven naar een `for` loop, de forEach functie werd namelijk ook niet ondersteund.
 
-In week 2 beginnen we met de eindopdracht. We hebben in week 1 onderzocht wat PE is en welke feautures wel of niet goed worden ondersteund. Deze week gaan we leren hoe je een interactieve toepassing in 3 lagen kan ontwerpen en wat je kan doen als een browser een 'enhancement' niet kan tonen.
 
-#### Woensdag 29 maart
+## Progressive enhancement
 
-Woensdag krijg je een briefing van de eindopdracht en een college over browsers, en alles (!) wat daarbij hoort. Daarna gaan we aan de slag: als je een interactieve toepassing ontwerpt die alle gebruikers, met alle browsers moeten kunnen zien, dan zul je moeten bedenken hoe je de toepassing in 3 lagen kan opbouwen, eerst bepaal je de core functionaliteit en de user-delight ... schetsen maar!
+### 📄 HTML
 
-| Woensdag 29/3 | Wat  |
-|---|---|
-| 9:30 | Gastcollege van [Vitaly Friedman](https://www.smashingmagazine.com/author/vitaly-friedman/) over interfaces! |
-|  | [Briefing eindopdracht ✨ Progressive Enhanced Browser Technologie](course/eindopdracht.md) |
-| 11:00 | [College over browsers en support detection]() |
-| 16:00 | Checkouts |
+<p float="left">
+<img src="./docs/html2.png" width="24%" />
+<img src="./docs/html3.png" width="24%" />
+<img src="./docs/html4.png" width="24%" />
+<img src="./docs/html1.png" width="24%" />
+</p>
 
-#### Donderdag 30 maart
+Met Alleen HTML is de applicatie goed te gebruiken. Alle velden van het formulier zijn nog steeds required en het is voor de gebruiker nog steeds mogelijk om de volledige enquête in te vullen en versturen. Qua vormgeving is het niet mooi maar toch is nog steeds heel duidelijk een visuele onderscheidt tussen de verschillende stukken op de pagina. de afbeelding in de header blijft dezelfde grote omdat ik deze vanuit de HTML een `width` en `height` attribute heb meegegeven.
 
-Donderdag gaan we voorbeelden van PE en feature detection bespreken in een college over form validatie. Daarna aan de slag met je ontwerp, in clubjes gaan we je ontwerpideeën bespreken en bedenken hoe je dit in 3 lagen zou kunnen bouwen.  
+### HTML + CSS
 
-| Donderdag 30/3 | Wat  |
-|---|---|
-| 9:30 | College les 4 over Viewports |
-| 16:00 | Checkouts |
+Wanneer CSS wordt aangezet wordt de huisstijl van CMD Amsterdam zichtbaar, ook wordt een deel van het formulier niet meer zichtbaar waardoor de gebruiker niet een enorm lange pagina krijgt. Radio buttons worden weg gestopt in labels zodat dit er visueel ook aantrekkelijker uit ziet. Wanneer alle inputs in een fieldset zijn ingevuld zal het volgende stuk van de enquête te voorschijn komen. Wanneer alles is ingevuld verschijnt de submit knop waarmee de enquête verstuurd kan worden.
 
-Lezen voor les 4 📖
+### HTML + CSS + JS
 
-- [Be progressive by Jeremy Keith](https://adactio.com/journal/7706)
+Wanneer JavaScript aan wordt de ervaring van de gebruiker nog meer verbeterd. Aan de zijkant van de enquête verschijnen blokjes die bijhouden hoe ver je in de enquête bent. Hierdoor weet de gebruiker hoe veel deze nog moet invullen, de pagina geeft nu dus meer feedback af naar de gebruiker.
 
-#### Vrijdag 31 maart
+## 🔏 License
 
-Vrijdag bespreken we in groepjes de vorderingen voor de eindopdracht. Zorg dat je vandaag weet welke browsers (en devices) jij gaat testen.
-
-| Vrijdag 31/3 | Wat  |
-|---|---|
-| 9:30 | Vorderingen bespreken & feedback in groepjes |
-| 16:00 | Work Hard Play Hard |
+MIT
