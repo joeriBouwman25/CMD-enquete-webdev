@@ -6,12 +6,6 @@ const express = require('express')
 const handlebars = require('express-handlebars')
 const path = require('path')
 const router = require('./src/routes/router')
-// const translate = require('translate')
-
-
-// translate.engine = 'deepl'
-// translate.key = process.env.DEEPL_KEY
-// translate.from = 'nl'
 
 
 const app = express()
@@ -33,9 +27,4 @@ app
   .listen(port, () => {
     console.log(`Server running on port ${port}🎉`)
   })
-
-
-// translate('ik schijt in je beker met melk', "es")
-// .then(test => console.log(test))
-
 
