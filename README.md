@@ -44,7 +44,7 @@ De enquête is in de volgende browsers getest:
 
 ## Live demo
 
-Probeer de applicatie zelf uit op: https://node-poll-bt.herokuapp.com/
+Probeer de applicatie zelf uit op: https://cmd-enquete-webdev.herokuapp.com/
 
 ## Todo's
 
