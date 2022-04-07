@@ -17,6 +17,7 @@ CMD-Enquête-WebDev is een serverside gerenderde website waarbij de gebruiker ee
 -   Testverslag
 -   Progressive enhancement
 -   License
+-   Bronnen
 
 ## User Story
 Ik wil een enquête kunnen invullen over de minor Web Development, met verschillende antwoordmogelijkheden. Na afloop wil ik mijn antwoorden kunnen inzien.
@@ -24,7 +25,6 @@ Ik wil een enquête kunnen invullen over de minor Web Development, met verschill
 ## Features
 -   Enquête invullen
 -   antwoorden visueel inzien
--   Mobiele & desktop versie
 
 ## Wireflow
  
@@ -103,3 +103,9 @@ Wanneer JavaScript aan wordt de ervaring van de gebruiker nog meer verbeterd. Aa
 ## License
 
 MIT
+
+## Bronnen
+
+-   https://caniuse.com/
+-   https://html5test.com/
+-   https://www.cmd-amsterdam.nl/
