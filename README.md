@@ -8,6 +8,7 @@ CMD-Enquête-WebDev is een serverside gerenderde website waarbij de gebruiker ee
 
 ## Table of contents
 
+-   Opdracht 1 en 2
 -   User Story
 -   Features
 -   Live demo
@@ -19,7 +20,14 @@ CMD-Enquête-WebDev is een serverside gerenderde website waarbij de gebruiker ee
 -   License
 -   Bronnen
 
+## Opdracht 1 en 2
+
+Alvorens we aan de eindopdracht begonnen hadden we eerst twee groeps opdrachten, meer informatie over deze opdrachten is te vinden in mijn wiki:
+https://github.com/joeriBouwman25/CMD-enquete-webdev/wiki
+
+
 ## User Story
+
 Ik wil een enquête kunnen invullen over de minor Web Development, met verschillende antwoordmogelijkheden. Na afloop wil ik mijn antwoorden kunnen inzien.
 
 ## Features
