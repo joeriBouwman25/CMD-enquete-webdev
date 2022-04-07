@@ -28,10 +28,10 @@ Ik wil een enquête kunnen invullen over de minor Web Development, met verschill
 
 ## Wireflow
  
- <!-- <p float="left">
-<img src="./docs/wireflow.jpeg" width="48%" />
-<img src="./docs/wireflow2.jpeg" width="48%" />
-</p> -->
+ <p float="left">
+<img src="./assets/img/wireflow.png" width="100%" />
+
+</p>
 
 ## Browsers
 
