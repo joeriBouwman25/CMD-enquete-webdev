@@ -92,7 +92,7 @@ fieldset:first-of-type {
 
 fieldset:first-of-type > label:hover,
 fieldset label:nth-of-type(3):hover,
-fieldset:nth-of-type(2n) label:nth-of-type(4):hover {
+fieldset label:nth-of-type(4):hover {
   background-color: transparent;
   cursor: default;
 }
@@ -200,7 +200,7 @@ input {
   font-size: 0.9em;
   font-weight: 400;
   line-height: 22px;
-  color: #555;
+  color: #000;
   background-color: #efefef;
   box-shadow: 0 1px 2px rgb(0 0 0 / 9%) inset;
   -moz-appearance: textfield;
@@ -343,6 +343,11 @@ textarea {
   vertical-align: middle;
   box-shadow: none !important;
 }
+
+.labelButton:checked + label {
+  background-color: #000;
+}
+
 
 .labelButton:hover,
 .labelButton:focus {
