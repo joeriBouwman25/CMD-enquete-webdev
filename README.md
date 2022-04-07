@@ -1,6 +1,6 @@
 # CMD-Enquête-WebDev
 
-![](./docs/header.png)
+![](./assets/img/home-css.png)
 
 
 ## Over CMD-Enquête-WebDev
@@ -28,10 +28,10 @@ Ik wil een enquête kunnen invullen over de minor Web Development, met verschill
 
 ## Wireflow
  
- <p float="left">
+ <!-- <p float="left">
 <img src="./docs/wireflow.jpeg" width="48%" />
 <img src="./docs/wireflow2.jpeg" width="48%" />
-</p>
+</p> -->
 
 ## Browsers
 
@@ -72,22 +72,34 @@ Daarna moest ik alleen nog mijn `forEach` functie omschrijven naar een `for` loo
 ### 📄 HTML
 
 <p float="left">
-<img src="./docs/html2.png" width="24%" />
-<img src="./docs/html3.png" width="24%" />
-<img src="./docs/html4.png" width="24%" />
-<img src="./docs/html1.png" width="24%" />
+<img src="./assets/img/home-html.png" width="24%" />
+<img src="./assets/img/survey-html.png" width="24%" />
+<img src="./assets/img/submit-html.png" width="24%" />
 </p>
 
 Met Alleen HTML is de applicatie goed te gebruiken. Alle velden van het formulier zijn nog steeds required en het is voor de gebruiker nog steeds mogelijk om de volledige enquête in te vullen en versturen. Qua vormgeving is het niet mooi maar toch is nog steeds heel duidelijk een visuele onderscheidt tussen de verschillende stukken op de pagina. de afbeelding in de header blijft dezelfde grote omdat ik deze vanuit de HTML een `width` en `height` attribute heb meegegeven.
 
 ### HTML + CSS
 
+<p float="left">
+<img src="./assets/img/home-css.png" width="24%" />
+<img src="./assets/img/survey-css.png" width="24%" />
+<img src="./assets/img/submit-css.png" width="24%" />
+<img src="./assets/img/submit-css2.png" width="24%" />
+</p>
+
 Wanneer CSS wordt aangezet wordt de huisstijl van CMD Amsterdam zichtbaar, ook wordt een deel van het formulier niet meer zichtbaar waardoor de gebruiker niet een enorm lange pagina krijgt. Radio buttons worden weg gestopt in labels zodat dit er visueel ook aantrekkelijker uit ziet. Wanneer alle inputs in een fieldset zijn ingevuld zal het volgende stuk van de enquête te voorschijn komen. Wanneer alles is ingevuld verschijnt de submit knop waarmee de enquête verstuurd kan worden.
 
 ### HTML + CSS + JS
 
+<p float="left">
+<img src="./assets/img/home-css.png" width="24%" />
+<img src="./assets/img/survey-js.png" width="24%" />
+<img src="./assets/img/survey-js2.png" width="24%" />
+</p>
+
 Wanneer JavaScript aan wordt de ervaring van de gebruiker nog meer verbeterd. Aan de zijkant van de enquête verschijnen blokjes die bijhouden hoe ver je in de enquête bent. Hierdoor weet de gebruiker hoe veel deze nog moet invullen, de pagina geeft nu dus meer feedback af naar de gebruiker.
 
-## 🔏 License
+## License
 
 MIT
