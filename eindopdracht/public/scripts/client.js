@@ -1,6 +1,7 @@
 // check variable
 var hasJavaScript = document.querySelector('body')
 var breadCrums = document.querySelectorAll('main > span')
+var fieldset = document.querySelectorAll('fieldset')
 
 function scrollEvent() {
     window.onscroll = function() {

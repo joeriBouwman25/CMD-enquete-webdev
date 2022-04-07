@@ -57,7 +57,7 @@ Probeer de applicatie zelf uit op: https://cmd-enquete-webdev.herokuapp.com/
 ## Todo's
 
 -   Tussentijds opslaan van informatie 
--   Betere from validation
+-   Betere form validation
 
 ## Testverslag
 
