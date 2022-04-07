@@ -1,6 +1,12 @@
 * {
   margin: 0;
+  padding: 0;
   box-sizing: border-box;
+}
+
+@font-face {
+  font-family: "open sans";
+  src: url("/fonts/OpenSans-Regular.ttf");
 }
 
 html {
@@ -14,11 +20,16 @@ a {
 
 body {
   background-color: #fff;
-  font-family: open sans;
+  font-family: "open sans";
   margin-bottom: 5em;
 }
 
-button {
+
+
+
+
+button,
+.labelButton {
   width: 30em;
   height: 4em;
   color: #fff;
@@ -32,32 +43,78 @@ button {
 }
 
 fieldset {
-  display: inline;
-  width: 30em;
+  padding: 0.5em;
+  position: relative;
+  width: 70%;
+  max-width: 38em;
   margin: 1em auto;
   background-color: #fff;
+  border-radius: 0.3em;
+  border-style: solid;
+  border-color: #d1d1d1;
 }
 
 fieldset:first-of-type {
   display: block;
 }
 
-@supports (display: flex) {
-  form {
-    display: flex;
-    flex-wrap: wrap;
-    flex-direction: column;
-    align-content: center;
+@supports selector(fieldset:valid) {
+  button {
+    display: none;
+  }
+  
+  form .noHide {
+    display: block;
   }
 
   fieldset {
-    width: 90%;
-    max-width: 30em;
+    display: none;
   }
 
-  header {
-    display: flex;
+  fieldset:first-of-type:valid + fieldset,
+  fieldset:nth-of-type(2):valid + fieldset,
+  fieldset:nth-of-type(3):valid + fieldset,
+  fieldset:nth-of-type(4):valid + fieldset,
+  fieldset:nth-of-type(5):valid + button {
+    display: block;
   }
+}
+
+@supports selector(fieldset:invalid) {
+  fieldset:first-of-type:invalid ~ fieldset,
+  fieldset:nth-of-type(2):invalid ~ fieldset,
+  fieldset:nth-of-type(3):invalid ~ fieldset,
+  fieldset:nth-of-type(4):invalid ~ fieldset,
+  fieldset:nth-of-type(5):invalid ~ button {
+    display: none;
+  }
+}
+
+fieldset:first-of-type > label:hover,
+fieldset label:nth-of-type(3):hover,
+fieldset:nth-of-type(2n) label:nth-of-type(4):hover {
+  background-color: transparent;
+  cursor: default;
+}
+
+fieldset label:nth-of-type(3),
+fieldset label:nth-of-type(4) {
+  box-shadow: none !important;
+  display: block;
+}
+
+fieldset > h2 {
+  margin: 1em 0 0.3em 0;
+}
+
+fieldset > h3 {
+  text-align: left;
+  font-weight: 900;
+}
+
+fieldset > p {
+  margin: 0.2em 0 0.5em 0;
+  color: #555;
 }
 
 footer {
@@ -69,7 +126,7 @@ footer {
   left: 0;
   right: 0;
   height: 5em;
-  background-color: #777;
+  background-color: #595959;
 }
 
 footer a {
@@ -84,9 +141,22 @@ footer p {
 }
 
 form {
-  max-width: 90em;
+  display: flex;
+  flex-wrap: wrap;
+  flex-direction: column;
+  align-content: center;
+  width: 100%;
   padding: 2.6em 0 2.25em 0;
   background-color: #fef01f;
+}
+
+header {
+  display: flex;
+}
+
+h1 {
+  margin: 0.7em 0 0 0.5em;
+  font-size: 1.5em;
 }
 
 h2 {
@@ -94,16 +164,16 @@ h2 {
   letter-spacing: -1px;
   font-size: 22px;
   line-height: 2.25em;
+  margin: 1em 0 0.3em 0.5em;
 }
 
 h3 {
-  margin: 0 auto;
+  display: block;
+  text-align: center;
 }
 
-/* document.forms.elements */
-
-input,
 textarea {
+  border-radius: 0.3em;
   width: 100%;
   padding: 10px;
   border: 0px;
@@ -116,35 +186,186 @@ textarea {
   box-shadow: 0 1px 2px rgb(0 0 0 / 9%) inset;
 }
 
-textarea {
-  resize: none;
-  font-family: open sans;
+input::-webkit-outer-spin-button,
+input::-webkit-inner-spin-button {
+  -webkit-appearance: none;
+  margin: 0;
+}
+
+input {
+  border-radius: 0.3em;
+  padding: 10px;
+  border: 0px;
+  border-bottom: 1px solid #fff;
+  font-size: 0.9em;
+  font-weight: 400;
+  line-height: 22px;
+  color: #555;
+  background-color: #efefef;
+  box-shadow: 0 1px 2px rgb(0 0 0 / 9%) inset;
+  -moz-appearance: textfield;
+}
+
+input[type="button"] {
+  width: 30em;
+  margin: 0 auto;
+}
+
+input[type="radio"]:focus + label {
+  background-color: #fef01f;
+}
+
+input[type="number"],
+input[type="text"] {
+  width: 100%;
 }
 
 input[type="radio"] {
-  display: none;
+  opacity: 0;
+  position: absolute;
 }
 
-label {
-  margin: 0 0.25em;
-  padding: 0.5em 0.3em;
-  border-radius: 0.3em;
+input[type="radio"] ~ label {
+  box-shadow: 1px 2px 6px #e1e1e1;
+}
+
+input:checked ~ section {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
 }
 
 input:checked + label {
   background-color: #fef01f;
 }
 
-label:hover:not(fieldset:first-of-type > label, fieldset:nth-of-type(2n) label:nth-of-type(3)) {
+input[type="radio"]:focus + .labelButton {
+  background-color: #000;
+}
+
+label {
+  margin: 0.8em 0.3em 0 0;
+  padding: 1em;
+  border-radius: 0.3em;
+  display: inline-block;
+}
+
+label:hover {
+  cursor: pointer;
   background-color: #fef01f;
 }
 
 legend {
   background-color: #fff;
   padding: 0.3em;
+  border-radius: 0.3em;
+}
+
+main > span {
+  position: fixed;
+  border: 0;
+  left: auto;
+  right: 8%;
+  height: 6.5%;
+  border-radius: .3em;
+  background-color: rgba(89, 89, 89, 0.137);
+  transition: 1s;
+}
+
+main > p:first-of-type {
+  font-size: 1.25em;
+  max-width: 30em;
+}
+
+main > p:nth-of-type(2),
+main > p:nth-of-type(3) {
+  font-size: 1.1em;
 }
 
 p {
-  max-width: 38em;
-  margin: 1em;
+  max-width: 36em;
+  font-weight: 300;
+  line-height: 1.75em;
+  margin: 1em 0 0.5em 0.7em;
 }
+
+section {
+  display: none;
+}
+
+section > fieldset {
+  margin: 0.5em;
+  width: 40%;
+  max-width: 90%;
+}
+
+section > fieldset:first-of-type {
+  width: 82%;
+}
+
+section > h2 {
+  width: 100%;
+}
+
+span {
+  border-left: 10px solid transparent;
+  border-right: 10px solid transparent;
+  border-top: 10px solid #f8f8f8;
+  height: 10px;
+  width: 10px;
+  left: 440px;
+  margin: -42px auto 33px auto;
+}
+
+textarea {
+  resize: none;
+  font-family: "open sans";
+}
+
+/* .closeButton {
+  max-width: 30em;
+} */
+
+.active {
+  background-color: #595959;
+  transition: 1s;
+}
+
+.hide {
+  display: none;
+}
+
+
+.labelButton {
+  padding: 1.4019em;
+  font-size: 0.9em;
+  text-align: center;
+  vertical-align: middle;
+  box-shadow: none !important;
+}
+
+.labelButton:hover,
+.labelButton:focus {
+  background-color: #000;
+}
+
+#breadCrum1 {
+  top: 11em;
+}
+
+#breadCrum2 {
+  top: 15.25em;
+}
+
+#breadCrum3 {
+  top: 19.5em;
+}
+
+#breadCrum4 {
+  top: 23.75em;
+}
+
+#breadCrum5 {
+  top: 28em;
+}
+

@@ -1,2 +1,83 @@
-<h2>Enquête Succesvol Verstuurd</h2>
+<h1>Enquête Succesvol Verstuurd</h1>
 <p>Bedankt voor je tijd en deelname aan deze enquête</p>
+
+<form action="#">
+  <span></span>
+  <input id="answers" type="radio" />
+  <label class="labelButton" for="answers">Antwoorden</label>
+
+  <section>
+    <h2>Je hebt de volgende antwoorden gegeven:</h2>
+    <fieldset>
+      <legend>Student gegevens</legend>
+      <h3>Jouw gegevens</h3>
+      <p>{{answers.name}}</p>
+      <h3>Studentnummer:</h3>
+      <p>{{answers.studentNumber}}</p>
+    </fieldset>
+    {{! ---------------------WAFS--------------------- }}
+    <fieldset>
+      <legend>Web Apps From Scratch</legend>
+      <h3>Beoordelaar</h3>
+      <p>{{answers.wafsDocent}}</p>
+      <h3>In welke weken volgde je dit vak?</h3>
+      <p>Van week {{answers.wafsWeken.[0]}} tot week {{answers.wafsWeken.[1]}}</p>
+      <h3>Welk cijfer geef je dit vak?</h3>
+      <p>{{answers.wafsCijfer}}</p>
+      <h3>Hoe goed was de lesstof te begrijpen?</h3>
+      <p>{{answers.wafsLesstof}}</p>
+      <h3>Hoe goed was de uitleg te begrijpen?</h3>
+      <p>{{answers.wafsUitleg}}</p>
+      <h3>Opmerkingen:</h3>
+      <p>{{answers.wafsOpmerkingen}}</p>
+    </fieldset>
+    {{! ---------------------CSS--------------------- }}
+    <fieldset>
+      <legend>CSS To The Rescue</legend>
+      <h3>Beoordelaar</h3>
+      <p>{{answers.cssDocent}}</p>
+      <h3>In welke weken volgde je dit vak?</h3>
+      <p>Van week {{answers.cssWeken.[0]}} tot week {{answers.cssWeken.[1]}}</p>
+      <h3>Welk cijfer geef je dit vak?</h3>
+      <p>{{answers.cssCijfer}}</p>
+      <h3>Hoe goed was de lesstof te begrijpen?</h3>
+      <p>{{answers.cssLesstof}}</p>
+      <h3>Hoe goed was de uitleg te begrijpen?</h3>
+      <p>{{answers.cssUitleg}}</p>
+      <h3>Opmerkingen:</h3>
+      <p>{{answers.cssOpmerkingen}}</p>
+    </fieldset>
+    {{! ---------------------Bt--------------------- }}
+    <fieldset>
+      <legend>Browser Technologies</legend>
+      <h3>Beoordelaar</h3>
+      <p>{{answers.btDocent}}</p>
+      <h3>In welke weken volgde je dit vak?</h3>
+      <p>Van week {{answers.btWeken.[0]}} tot week {{answers.btWeken.[1]}}</p>
+      <h3>Welk cijfer geef je dit vak?</h3>
+      <p>{{answers.btCijfer}}</p>
+      <h3>Hoe goed was de lesstof te begrijpen?</h3>
+      <p>{{answers.btLesstof}}</p>
+      <h3>Hoe goed was de uitleg te begrijpen?</h3>
+      <p>{{answers.btUitleg}}</p>
+      <h3>Opmerkingen:</h3>
+      <p>{{answers.btOpmerkingen}}</p>
+    </fieldset>
+    {{! ---------------------PWA--------------------- }}
+    <fieldset>
+      <legend>Progresive Web Apps</legend>
+      <h3>Beoordelaar</h3>
+      <p>{{answers.pwaDocent}}</p>
+      <h3>In welke weken volgde je dit vak?</h3>
+      <p>Van week {{answers.pwaWeken.[0]}} tot week {{answers.pwaWeken.[1]}}</p>
+      <h3>Welk cijfer geef je dit vak?</h3>
+      <p>{{answers.pwaCijfer}}</p>
+      <h3>Hoe goed was de lesstof te begrijpen?</h3>
+      <p>{{answers.pwaLesstof}}</p>
+      <h3>Hoe goed was de uitleg te begrijpen?</h3>
+      <p>{{answers.pwaUitleg}}</p>
+      <h3>Opmerkingen:</h3>
+      <p>{{answers.pwaOpmerkingen}}</p>
+    </fieldset>
+  </section>
+</form>
