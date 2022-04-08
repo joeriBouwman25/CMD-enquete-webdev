@@ -3,14 +3,17 @@ var hasJavaScript = document.querySelector('body')
 var breadCrums = document.querySelectorAll('main > span')
 var fieldset = document.querySelectorAll('fieldset')
 
+
+
 function scrollEvent() {
     window.onscroll = function() {
         scroll()
     }
+
     
     function scroll() {
         var scrollPosition = window.pageYOffset
-
+        
         if (scrollPosition > 0 && scrollPosition < 300) {
             breadCrums[0].classList.add('active')
             if(breadCrums[1].className == 'active'){
